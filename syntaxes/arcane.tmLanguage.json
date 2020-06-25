@@ -1,0 +1,100 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Arcane",
+	"patterns": [
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#punctuations"
+		}
+	],
+	"repository": {
+
+		"keywords": {
+			"patterns": [
+			{		
+				"match": "(?!(void|true|false|int|uint|byte|ubyte|char|uchar|string|long|float|double|if|while|for|return))\\b\\w+\\b(?!\\()",
+				"name": "variable.other.arcane"
+			},
+			{
+				"name": "keyword.control.arcane",
+				"match": "\\b(if|while|for|return)\\b"
+			},
+			{
+				"name": "storage.type.arcane",
+				"match": "\\b(void|int|uint|byte|ubyte|char|uchar|string|long|float|double)\\b"
+			},
+			{
+				"name": "entity.name.function.arcane",
+				"match": "\\b\\w+\\b(?=\\()"
+			}
+
+			
+			]
+		},
+
+		"strings": {
+			"patterns":[
+			{
+				"name": "string.quoted.double.arcane",
+				"begin": "\"",
+				"end": "\"",
+				"patterns": [
+					{
+						"name": "constant.character.escape.arcane",
+						"match": "\\\\."
+					}
+				]
+			},
+			{
+				"name": "string.quoted.single.arcane",
+				"begin": "'",
+				"end": "'",
+				"patterns": [
+					{
+						"name": "constant.character.escape.arcane",
+						"match": "\\\\."
+					}
+				]
+			}
+			]
+		},
+
+		"constants": {
+			"patterns":[
+				{
+					"name": "constant.language.arcane",
+					"match": "true|false"
+				},
+				{
+					"name": "constant.numeric.arcane",
+					"match": "[0-9]"
+				}
+			]
+		},
+		"punctuations": {
+			"patterns": [
+				{
+					"match": ",",
+					"name": "punctuation.comma.arcane"
+				},
+				{
+					"match": ";",
+					"name": "punctuation.terminator.arcane"
+				},
+				{
+					"match": "\\.",
+					"name": "punctuation.dot.arcane"
+				}
+			]
+		}
+	},
+	"scopeName": "source.arcane"
+}

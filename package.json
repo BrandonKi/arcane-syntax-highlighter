@@ -1,0 +1,25 @@
+{
+    "name": "arcane-syntax-highlighting",
+    "displayName": "arcane-syntax-highlighting",
+    "description": "Syntax highlighting for Arcane.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "arcane",
+            "aliases": ["Arcane", "arcane"],
+            "extensions": [".arcs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "arcane",
+            "scopeName": "source.arcane",
+            "path": "./syntaxes/arcane.tmLanguage.json"
+        }]
+    }
+}
