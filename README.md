@@ -1,6 +1,6 @@
 # arcane-syntax-highlighting README
 
-Highlights all arcane source files (.arcs)
+VSCode extension that provides syntax highlighting for arcane source files (.arcs)
 
 ### 1.0.0
 
