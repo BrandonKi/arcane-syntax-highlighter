@@ -92,6 +92,15 @@
 				{
 					"match": "\\.",
 					"name": "punctuation.dot.arcane"
+				},
+				{
+					"match": "\\/\\/.*",
+					"name": "comment.line.double-slash.arcane"
+				},
+				{
+					"name": "comment.block.arcane",
+					"begin": "\\/\\*",
+					"end": "\\*\\/"
 				}
 			]
 		}
