@@ -20,7 +20,7 @@
 		"keywords": {
 			"patterns": [
 			{		
-				"match": "(?!(void|true|false|int|uint|byte|ubyte|char|uchar|string|long|float|double|if|while|for|return))\\b\\w+\\b(?!\\()",
+				"match": "(?!(\\b(void|true|false|int|uint|byte|ubyte|char|uchar|string|long|float|double|if|while|for|return)\\b))\\b\\w+\\b(?!\\()",
 				"name": "variable.other.arcane"
 			},
 			{
