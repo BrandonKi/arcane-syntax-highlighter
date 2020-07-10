@@ -20,12 +20,12 @@
 		"keywords": {
 			"patterns": [
 			{		
-				"match": "(?!(\\b(void|true|false|int|uint|byte|ubyte|char|uchar|string|long|float|double|if|while|for|return)\\b))\\b\\w+\\b(?!\\()",
+				"match": "(?!(\\b(void|true|false|int|uint|byte|ubyte|char|uchar|string|long|float|double|if|while|for|fn|ret)\\b))\\b\\w+\\b(?!\\()",
 				"name": "variable.other.arcane"
 			},
 			{
 				"name": "keyword.control.arcane",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(fn|if|while|for|ret)\\b"
 			},
 			{
 				"name": "storage.type.arcane",

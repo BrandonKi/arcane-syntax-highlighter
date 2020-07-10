@@ -13,7 +13,7 @@
         "languages": [{
             "id": "arcane",
             "aliases": ["Arcane", "arcane"],
-            "extensions": [".arcs"],
+            "extensions": [".ar"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
