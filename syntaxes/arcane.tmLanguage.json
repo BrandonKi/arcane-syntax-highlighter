@@ -25,7 +25,7 @@
 			},
 			{
 				"name": "keyword.control.arcane",
-				"match": "\\b(fn|if||elif|else|while|do|for)\\b"
+				"match": "\\b(fn|ret|if|elif|else|while|do|for)\\b"
 			},
 			{
 				"name": "storage.type.arcane",
@@ -71,11 +71,11 @@
 			"patterns":[
 				{
 					"name": "constant.language.arcane",
-					"match": "true|false"
+					"match": "\\b(true|false)\\b"
 				},
 				{
 					"name": "constant.numeric.arcane",
-					"match": "[0-9]"
+					"match": "\\b(?:[0-9]|\\.)+\\b"
 				}
 			]
 		},
