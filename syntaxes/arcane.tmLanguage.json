@@ -19,23 +19,26 @@
 
 		"keywords": {
 			"patterns": [
-			{		
-				"match": "(?!(\\b(void|true|false|int|float|char|struct|arr|string|i8|i16|i32|i64|u8|u16|u32|u64|f32|f64|fn|ret|if|elif|else|while|for|do|switch|break|case|default)\\b))\\b\\w+\\b(?!\\()",
-				"name": "variable.other.arcane"
-			},
-			{
-				"name": "keyword.control.arcane",
-				"match": "\\b(fn|ret|if|elif|else|while|do|for)\\b"
-			},
-			{
-				"name": "storage.type.arcane",
-				"match": "\\b(void|int|float|char|struct|arr|string|i8|i16|i32|i64|u8|u16|u32|u64|f32|f64)\\b"
-			},
-			{
-				"name": "entity.name.function.arcane",
-				"match": "\\b\\w+\\b(?=\\()"
-			}
-
+				{
+					"name": "keyword.control.arcane",
+					"match": "(?<=[\\}\\)\\]])\\s*U\\s*(?=[\\{\\(\\[])"
+				},
+				{		
+					"match": "(?!(\\b(void|true|false|int|float|char|struct|arr|string|i8|i16|i32|i64|u8|u16|u32|u64|f32|f64|fn|ret|if|elif|else|while|for|do|switch|break|case|default)\\b))\\b\\w+\\b(?!\\()",
+					"name": "variable.other.arcane"
+				},
+				{
+					"name": "keyword.control.arcane",
+					"match": "\\$|(\\b(fn|ret|if|elif|else|while|do|for)\\b)"
+				},			
+				{
+					"name": "storage.type.arcane",
+					"match": "\\b(void|int|float|char|struct|arr|string|i8|i16|i32|i64|u8|u16|u32|u64|f32|f64)\\b"
+				},
+				{
+					"name": "entity.name.function.arcane",
+					"match": "\\b\\w+\\b(?=\\()"
+				}
 			
 			]
 		},
